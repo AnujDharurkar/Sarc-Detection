@@ -1,0 +1,484 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sarcasm Detection</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/static/images/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="/static/css/magnific-popup.css" />
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="/static/css/typography.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+  </head>
+  <body >
+    <!-- loading -->
+    <div id="loading">
+      <div id="loading-center">
+        <img src="/static/images/loader.gif" alt="loder">
+      </div>
+    </div>
+    <!-- loading End -->
+
+       <!-- Header-->
+    <header id="header-fullpage" class="home"">
+         <div class="container-fluid">
+            <div class="row align-items-center no-gutters">
+               <div class="col-lg-10">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <a class="navbar-brand" href="">
+                     <img class="logo" src="/static/images/logo.png" alt="image">
+                     </a>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav m-auto">
+                           <li class="nav-item">
+                              <a class="nav-link active" href="{{ url_for('index') }}">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="{{ url_for('Model') }}">Model</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="{{ url_for('modelresults') }}">Model Analysis</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="{{ url_for('discord') }}">Discord Bot</a>
+                           </li>
+                           
+                           
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <div class="col-lg-2 text-right sidemenu">
+                              <div id="nav-container">
+    <div class="bg"></div>
+    <div class="nav-button" >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div id="nav-content" >
+        <h3 class="text-white mb-3">Get In Touch :</h3>
+         <ul><li>
+                                       
+                                        <p>P.E.S. Modern College of Engineering,Pune</p>
+                                    </li>
+                                     <li>
+                                       
+                                        <p><b>Mail:</b><a href="mailto:ashish.zope@moderncoe.edu.in">ashish.zope@moderncoe.edu.in</a></p>
+                                    </li>
+                                    <li>
+                                        
+                                        <p><b>Phone:</b><a href="tel:+9028001626"> +9028001626</a></p>
+                                    </li>
+                                   
+                                   </ul>
+
+    </div>
+  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+    <!-- Header-->
+    <!--=================================
+    MAIN CONTENT -->
+    <div class="main-content index" id="fullpage">
+  
+   <!-- Banner-->
+    <section class="banner section " id="section0">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="banner-type wow fadeInLeft">
+              <img class="img-fluid banner-person" src="/static/images/banner/05.png" alt="img">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="banner-text">
+             <h1 class="text-left  mb-3">Sarcasm Detection MHA-BILSTM Neural Network</h1>
+              <ul class="banner-list text-white">
+                <li>A general purpose sarcasm detection application to recognize any text based sarcastic sentence.</li>
+                <li>Implementing a Multi-Head Attention based Bidirectional Long-Short Term Memory</li>
+              </ul>
+              <div class="align-items-center d-flex">
+                <a class="link" href="{{ url_for('Model') }}"><i class="fas fa-arrow-right"></i>Try Model</a>
+               
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- Banner-->
+      <!--=================================
+      Clients -->
+     
+        <!--=================================
+      How Works -->
+        <section class="iq-how-works section" id="section2">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="iq-works-title">
+                <div class="row">
+              <div class="col-lg-4">
+                
+                <h2 class=" mb-3 mb-lg-0">How MHA-BILSTM Works</h2>
+             
+              </div>
+              <div class="col-lg-5">
+                <p class="mb-5 mb-lg-0">
+                  Our network uses Bidirectional LSTM
+with the multi-head mechanism. Multi-head attention allows
+the model to jointly attend to information from different rep-
+resentation subspaces at different positions.This Multi-Head Attention-
+based Bidirectional LSTM (MHA-BiLSTM), consists of five
+main parts.
+                </p>
+              </div>
+              <div class="col-lg-3 align-self-center text-center">
+                <a class="link-btn "><i class="fas fa-arrow-right"></i> Read More</a>
+              </div>
+            </div>
+            </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-lg-6 iq-rmb-50"><img src="/static/images/feature/01.png"></div>
+               <div class="col-lg-6"><img src="/static/images/feature/02.png"></div>
+            </div>
+          </div>
+          
+        </section>
+        <!--=================================
+      How Works End -->
+       <!--=================================
+      About us -->
+      <section class="iq-about blue-bg section" id="section3">
+        <div class="container-fluid">
+          <div class="row no-gutters">
+            <div class="col-lg-4 align-self-center text-white left">
+              <h2 class=" text-white mb-3">About Sarc Detection </h2>
+              <p>MHA-BiLSTM is implemented and accordingly the accuracy and detection
+of sarcasm is notified to the user. Additon of features to the existing model will enhance the performance even more. Implementation of the Discord
+BOT shows its potential to be integrated in automated chat service centers.</p>
+            </div>
+            <div class="col-lg-4">
+               <div class="holderCircle">
+                        <div class="round"></div>
+                        <div class="dotCircle">
+                           <span class="itemDot active itemDot1" data-tab="1">
+                           
+                           <span class="forActive"></span>
+                           </span>
+                           <span class="itemDot itemDot2" data-tab="2">
+                      
+                           <span class="forActive"></span>
+                           </span>
+                           <span class="itemDot itemDot3" data-tab="3">
+                         
+                           <span class="forActive"></span>
+                           </span>
+                           <span class="itemDot itemDot4" data-tab="4">
+                      
+                           <span class="forActive"></span>
+                           </span>
+                           <span class="itemDot itemDot5" data-tab="5">
+                         
+                           <span class="forActive"></span>
+                           </span>
+                           <span class="itemDot itemDot6" data-tab="6">
+                       
+                           <span class="forActive"></span>
+                           </span>
+                        </div>
+                        <div class="contentCircle">
+                           <div class="CirItem title-box active CirItem1">
+                              <img src="/static/images/about/01.png" alt="images" class="img-fluid">
+                           </div>
+                           <div class="CirItem title-box CirItem2">
+                              <img src="/static/images/about/01.png" alt="images" class="img-fluid">
+                           </div>
+                           <div class="CirItem title-box CirItem3">
+                             <img src="/static/images/about/01.png" alt="images" class="img-fluid">
+                           </div>
+                           <div class="CirItem title-box CirItem4">
+                              <img src="/static/images/about/01.png" alt="images" class="img-fluid">
+                           </div>
+                           <div class="CirItem title-box CirItem5">
+                            <img src="/static/images/about/01.png" alt="images" class="img-fluid">
+                           </div>
+                           <div class="CirItem title-box CirItem6">
+                          <img src="/static/images/about/01.png" alt="images" class="img-fluid">
+                           </div>
+                        </div>
+                     </div>
+            </div>
+            <div class="col-lg-4  align-self-center text-white right">
+              <h2 class="text-left text-white mb-3">What is<br>Our Project Scope?</h2>
+              <p class="mb-5">Attempt to improve the accuracy and efficiency of previously implemented sarcasm detection mechanism such as SVM, BiLstm, etc
+                  The basic prototype application will allow users to access a web application, and test the model by entering sarcastic comments to check if it is sarcastic or not</p>
+              <a class="link-btn white"><i class="fas fa-arrow-right blue"></i> Read More</a>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+       <!--=================================
+      About us End -->
+       <!--=================================
+      Use Case -->
+      <section class="iq-use-case main-bg section" id="section4" >
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-sm-12 text-center">
+                     <div class="title-box">
+                        <h2 class="title text-dark">Sarc Detection for Different Use Cases</h2>
+                     </div>
+                  </div>
+            </div>
+            <div class="row no-gutters ">
+              <div class="col-lg-4 col-md-6 ">
+                <div class="iq-usecase ">
+                  <div class="icon"><img src="/static/images/usecase/01.png" class="img-fluid" alt="images"></div>
+                  <h5 class="mb-3">Chatbots</h5>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 ">
+                <div class="iq-usecase ">
+                  <div class="icon"><img src="/static/images/usecase/02.png" class="img-fluid" alt="images"></div>
+                  <h5 class="mb-3">Virtual Assistants</h5>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 ">
+                <div class="iq-usecase ">
+                  <div class="icon"><img src="/static/images/usecase/03.png" class="img-fluid" alt="images"></div>
+                  <h5 class="mb-3">Social Media Platforms</h5>
+                  </div>
+              </div>
+            </div>
+          
+        </div>
+      </section>
+       <!--=================================
+      Use Case End -->
+       <!--=================================
+      Where to use -->
+     
+       <!--=================================
+      Where to use End -->
+       <!--=================================
+     Testimonial -->
+      <section class="iq-testimonial blue-bg section" id="section6">
+        <div class="container-fluid">
+          <div class="row no-gutters">
+            <div class="col-lg-4 align-self-center text-white left">
+              <h2 class=" text-white mb-3">Core Team</h2>
+              <p>People responsible for the Sarc Detection. This includes planning, execution, and closing as well as decision making to the project</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+               <div class="holderCircle1">
+                        <div class="round"></div>
+                        <div class="dotCircle1">
+                           <span class="itemTestimonial active itemTestimonial1" data-tab="1">
+                           
+                           <span class="forActive"></span>
+                           </span>
+                           <span class="itemTestimonial itemTestimonial2" data-tab="2">
+                      
+                           <span class="forActive"></span>
+                           </span>
+                           <span class="itemTestimonial itemTestimonial3" data-tab="3">
+                         
+                           <span class="forActive"></span>
+                           </span>
+                           
+                           
+                          
+                           
+                        </div>
+                        <div class="contentTestiminial">
+                           <div class="Cirtestimonial title-box active Cirtestimonial1">
+                              <img src="/static/images/testomonial/01.jpg" alt="images" class="img-fluid">
+                              <div class="testimonial-info ">
+                                <h2 class=" mb-3">Ashish Zope</h2>
+                                <p class="mb-3">Lead Web Devloper, ML Enthusiast</p>
+                                 <div class="social-icon">
+                                  <ul>
+                                    <li class="d-inline"><a href="#" class=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="d-inline"><a href="#" class=""><i class="fab fa-twitter"></i></a></li>
+                                    <li class="d-inline"><a href="#" class=""><i class="fab fa-google"></i></a></li>
+                                    <li class="d-inline"><a href="#" class=""><i class="fab fa-pinterest"></i></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                           </div>
+                           <div class="Cirtestimonial title-box Cirtestimonial2">
+                              <img src="/static/images/testomonial/02.jpg" alt="images" class="img-fluid">
+                              <div class="testimonial-info ">
+                                <h2 class=" mb-3">Anuj Dharurkar</h2>
+                                <p class="mb-3">Lead Data Scientist</p>
+                                 <div class="social-icon">
+                                  <ul>
+                                    <li class="d-inline"><a href="#" class=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="d-inline"><a href="#" class=""><i class="fab fa-twitter"></i></a></li>
+                                    <li class="d-inline"><a href="#" class=""><i class="fab fa-google"></i></a></li>
+                                    <li class="d-inline"><a href="#" class=""><i class="fab fa-pinterest"></i></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                           </div>
+                           
+                           
+                           <div class="Cirtestimonial title-box Cirtestimonial3">
+                             <img src="/static/images/testomonial/03.jpg" alt="images" class="img-fluid">
+                              <div class="testimonial-info ">
+                                <h2 class=" mb-3">Kamod Lokhande</h2>
+                                <p class="mb-3">Software Engineer, Research Analyst</p>
+                                 <div class="social-icon">
+                                  <ul>
+                                    <li class="d-inline"><a href="#" class=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="d-inline"><a href="#" class=""><i class="fab fa-twitter"></i></a></li>
+                                    <li class="d-inline"><a href="#" class=""><i class="fab fa-google"></i></a></li>
+                                    <li class="d-inline"><a href="#" class=""><i class="fab fa-pinterest"></i></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                           </div>
+                           
+                           
+                           
+                        </div>
+                     </div>
+            </div>
+            <div class="col-lg-4 position-relative" style="z-index: -1;"></div>
+
+          </div>
+        </div>
+
+      </section>
+
+       <!--=================================
+      Testimonial End -->
+  
+      <!--=================================
+      Event -->
+     
+      <!--=================================
+      Event End -->
+    
+       <!-- Footer start-->
+    <section id="contact" class="footer section" id="section8">
+      <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-4 align-self-center">
+                  <h3 class="mb-5">Get in Touch With Us</h3>
+                  <form  method="post">
+                     <div class="contact-form">
+                        <input class="require contact-first-name" id="contact_firstname" type="text" placeholder="First Name" name="name">
+                        <input class="require contact-last-name" id="contact_lastname" type="text" placeholder="Last Name" name="company">
+                        <input class="require contact-email" id="contact_email" type="email" placeholder="Email" name="email">
+                        <textarea id="contact_message" class="input-message require contact-message" placeholder="How can we help you?" rows="3" name="message"></textarea>
+                        <a id="submit" name="submit"  value="Send" class="link-btn contact-us-button"> <i class="fas fa-arrow-right"></i> Send Message</a>
+                     </div>
+                  </form>
+               </div>
+           
+               <div class="col-lg-4">
+                 
+                 <iframe class="map" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=pes modern&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" style="border:0" allowfullscreen></iframe></div>
+               <div class="col-lg-4 align-self-center  ">
+                  <h3 class="mb-5">Contact With Us</h3>
+                  <div class="iq-contact">
+                     <div class="icon">
+                        <i class="fas fa-globe-asia"></i>
+                     </div>
+                     <ul>
+                        <li>
+                           <p>P.E.S. Modern College of Engineering,Pune</p>
+                        </li>
+                        <li>
+                           <p><b>Mail:</b><a href="mailto:ashish.zope@gmail.com"> <span class="__cf_email__" >[email&#160;protected]</span></a></p>
+                        </li>
+                        <li>
+                           <p><b>Phone:</b><a href="tel:+91 9405126313">+91 9405126313</a></p>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="iq-contact mt-5">
+                     <div class="icon">
+                        <i class="fas fa-globe-asia"></i>
+                     </div>
+                     <ul>
+                        <li>
+                           <p>1186/A, Off J.M. Road, Shivaji nagar, Pune, Maharashtra 411005</p>
+                        </li>
+                        <li>
+                           <p><b>Mail:</b><a href="ashish.zope@moderncoe.edu.in"> <span class="__cf_email__" >[email&#160;protected]</span></a></p>
+                        </li>
+                        <li>
+                           <p><b>Phone:</b><a href="tel:+91 9028001626"> +91 9028001626</a></p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-12 text-center">
+                  <a class="copyright">Sarc Detection All right reserved 2021</a>
+               </div>
+            </div>
+         </div>
+        
+     
+      <!-- back-to-top -->
+    <div id="back-to-top">
+               <a class="top" id="top" href="#top"> <i class="ion-ios-upload-outline"></i> </a>
+            </div>
+      <!-- back-to-top End -->
+      
+    </section>
+
+    </div>
+    <!--=================================
+    MAIN CONTENT -->
+    <!--=================================
+    Clients -->
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first -->
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <!-- popper -->
+    <script src="/static/js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- Modernizr JavaScript -->
+    <script src="/static/js/modernizr.js"></script>
+    <!-- Owl Carousel -->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!-- Circle -->
+    <script src="/static/js/circle.js"></script>
+    <!-- main -->
+    <script src="/static/js/main.js"></script>
+      <!-- Fullpage Scroll -->
+    <script src="/static/js/fullpage.min.js"></script>    
+    <!-- Retina JavaScript -->
+    <script src="/static/js/retina.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="/static/js/custom.js"></script>  
+  </body>
+</html>

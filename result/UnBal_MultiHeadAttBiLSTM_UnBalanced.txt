@@ -1,0 +1,2 @@
+modelName	precision	recall	f1_score
+UnBal_MultiHeadAttBiLSTM	0.5991510006064281	0.5040816326530613	0.5475200886672208

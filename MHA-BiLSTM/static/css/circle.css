@@ -1,0 +1,323 @@
+/*
+	create by nasir farhadi
+	email : nasirfarhadi92@gmail.com
+	Github : nasirfarhadi92
+*/
+.holderCircle {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  margin: 60px auto;
+  position: relative;
+}
+
+.dotCircle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: -10%;
+  right: -10%;
+  bottom: 0;
+  border-radius: 100%;
+  z-index: 20;
+}
+.dotCircle .itemDot {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  color: #7d4ac7;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 18px;
+  z-index: 3;
+  cursor: pointer;
+}
+.dotCircle .itemDot::before {
+  background: #ffffff;
+  border-radius: 90px;
+
+  position: absolute;
+  left: 2px;
+  top: 12px;
+  padding: 2px;
+  width: 14px;
+  height: 14px;
+  content: "";
+  z-index: 1;
+}
+.dotCircle .itemDot::after {
+  background: #ffffff;
+  border-radius: 90px;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "";
+}
+.dotCircle .itemDot.active::before,
+.dotCircle .itemDot.active::after {
+  background: #fcc056;
+}
+.dotCircle .itemDot .forActive {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.dotCircle .itemDot.active .forActive {
+  display: block;
+}
+.round {
+  position: absolute;
+  left: 50px;
+  top: 55px;
+  width: 400px;
+  height: 410px;
+  border: 3px dashed #ffffff;
+  border-radius: 100%;
+  -webkit-animation: rotation 100s infinite linear;
+}
+/* .round::after{border: 6px dashed #1835a9; border-radius: 100%; content: ""; position: absolute; left: -3px; top: -3px; width: 400px; height: 410px;} */
+
+.dotCircle .itemDot {
+  font-size: 40px;
+}
+.contentCircle {
+  width: 350px;
+  border-radius: 100%;
+  color: #222222;
+  position: relative;
+  top: 52%;
+  height: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contentCircle .CirItem {
+  border-radius: 100%;
+  color: #222222;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.5s;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin: auto;
+  line-height: 250px;
+}
+.CirItem.active {
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.contentCircle .CirItem img {
+  width: 100%;
+  border-radius: 100%;
+  height: 100%;
+}
+.contentCircle .CirItem i {
+  font-size: 180px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -90px;
+  color: #000000;
+  opacity: 0.1;
+}
+@media only screen and (min-width: 300px) and (max-width: 599px) {
+  .holderCircle {
+    width: 300px;
+    height: 300px;
+    margin: 0px auto;
+  }
+  .holderCircle::after {
+    width: 100%;
+    height: 100%;
+  }
+  .dotCircle {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+}
+
+.holderCircle1 {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  margin: 60px auto;
+  position: relative;
+}
+
+.dotCircle1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: -10%;
+  right: -10%;
+  bottom: 0;
+  border-radius: 100%;
+  z-index: 20;
+}
+.dotCircle1 .itemTestimonial {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  color: #7d4ac7;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 18px;
+  z-index: 3;
+  cursor: pointer;
+}
+.dotCircle1 .itemTestimonial::before {
+  background: #ffffff;
+  border-radius: 90px;
+
+  position: absolute;
+  left: 2px;
+  top: 12px;
+  padding: 2px;
+  width: 14px;
+  height: 14px;
+  content: "";
+  z-index: 1;
+}
+.dotCircle1 .itemTestimonial::after {
+  background: #ffffff;
+  border-radius: 90px;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "";
+}
+.dotCircle1 .itemTestimonial.active::before,
+.dotCircle .itemTestimonial.active::after {
+  background: #fcc056;
+}
+.dotCircle1 .itemTestimonial .forActive {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.dotCircle1 .itemTestimonial.active .forActive {
+  display: block;
+}
+.round {
+  position: absolute;
+  left: 50px;
+  top: 55px;
+  width: 400px;
+  height: 410px;
+  border: 3px dashed #ffffff;
+  border-radius: 100%;
+  -webkit-animation: rotation 100s infinite linear;
+}
+/* .round::after{border: 6px dashed #1835a9; border-radius: 100%; content: ""; position: absolute; left: -3px; top: -3px; width: 400px; height: 410px;} */
+
+.dotCircle1 .itemTestimonial {
+  font-size: 40px;
+}
+.contentTestiminial {
+  width: 350px;
+  border-radius: 100%;
+  color: #222222;
+  position: relative;
+  top: 52%;
+  height: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contentTestiminial .Cirtestimonial {
+  border-radius: 100%;
+  color: #222222;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin: auto;
+}
+.Cirtestimonial.active {
+  z-index: 1;
+  opacity: 1;
+}
+.contentTestiminial .Cirtestimonial img {
+  width: 100%;
+  border-radius: 100%;
+  height: 100%;
+}
+/* .contentTestiminial .Cirtestimonial i { font-size: 180px; position: absolute; top: 0; left: 50%; margin-left: -90px; color: #000000; opacity: 0.1; } */
+@media only screen and (min-width: 300px) and (max-width: 599px) {
+  .holderCircle1 {
+    width: 300px;
+    height: 300px;
+    margin: 0px auto 250px;
+  }
+  .holderCircle1::after {
+    width: 100%;
+    height: 100%;
+  }
+  .dotCircle1 {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+}

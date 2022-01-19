@@ -1,0 +1,210 @@
+
+<html>
+
+
+</html>
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sarcasm Detection</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/static/images/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="/static/css/magnific-popup.css" />
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="/static/css/typography.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+  </head>
+  <body >
+    <!-- loading -->
+    <div id="loading">
+      <div id="loading-center">
+        <img src="/static/images/loader.gif" alt="loder">
+      </div>
+    </div>
+    <!-- loading End -->
+
+       <!-- Header-->
+       <header id="header-fullpage" class="home"">
+         <div class="container-fluid">
+            <div class="row align-items-center no-gutters">
+               <div class="col-lg-10">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <a class="navbar-brand" href="">
+                     <img class="logo" src="/static/images/logo.png" alt="image">
+                     </a>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav m-auto">
+                           <li class="nav-item">
+                              <a class="nav-link active" href="{{ url_for('index') }}">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="{{ url_for('Model') }}">Model</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="{{ url_for('modelresults') }}">Model Analysis</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="{{ url_for('discord') }}">Discord Bot</a>
+                           </li>
+                           
+                           
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <div class="col-lg-2 text-right sidemenu">
+                              <div id="nav-container">
+    <div class="bg"></div>
+    <div class="nav-button" >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div id="nav-content" >
+        <h3 class="text-white mb-3">Get In Touch :</h3>
+         <ul><li>
+                                       
+                                        <p>P.E.S. Modern College of Engineering,Pune</p>
+                                    </li>
+                                     <li>
+                                       
+                                        <p><b>Mail:</b><a href="mailto:ashish.zope@moderncoe.edu.in">ashish.zope@moderncoe.edu.in</a></p>
+                                    </li>
+                                    <li>
+                                        
+                                        <p><b>Phone:</b><a href="tel:+9028001626"> +9028001626</a></p>
+                                    </li>
+                                   
+                                   </ul>
+
+    </div>
+  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+    <!-- Header-->
+    <!--=================================
+    MAIN CONTENT -->
+          <div class=" iq-breadcrumb purple-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="iq-mb-0">
+                            <h3 class="">MHA-BiLSTM</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <nav aria-label="breadcrumb" class="float-right">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{{ url_for('Model') }}">Home</a></li>
+                                
+                            </ol>
+                        </nav>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
+            <!-- Breadcrumb End -->
+            <!--=================================
+   <div class="main-content" >
+
+  <!--=================================
+    Solution -->
+    <section class="iq-solution pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="iq-solution-details">
+            <div class="iq-solution-info">
+            <div class="row">
+              <div class="col-lg-6 iq-rmb-30"><img src="/static/images/comp.png" class="img-fluid" alt="images"></div>
+              <div class="col-lg-6 align-self-center">
+                     <h2 class=" mb-2 iq-rmt-40 font-weight-bold">Sarcasm Analysis Result</h2>
+                     <p class="mb-3">Binary Classify statement is Sarcastic or Not-Sarcastic under a given corpus.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                     <ul class="listing-mark">
+						 {% if prediction == 1%}
+	<li>It's a Sarcastic Comment</li>
+	{% elif prediction == 0%}
+	<li>It's NOT Sarcastic Comment</li>
+	{% endif %}
+                        
+                     </ul>
+					 <body>
+
+	
+	
+	
+
+		
+
+	
+	
+	<a href="{{ url_for('Model') }}">
+	<input type="submit" value="Go Back..">
+	</a>
+
+</body>
+                  </div>
+            </div>
+          </div>
+          
+            
+            
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+<!--=================================
+    Solution End -->
+    </div>
+    <!--=================================
+    MAIN CONTENT -->
+    <!--=================================
+    MAIN CONTENT -->
+    <!--=================================
+    Clients -->
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first -->
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <!-- popper -->
+    <script src="/static/js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- Modernizr JavaScript -->
+    <script src="/static/js/modernizr.js"></script>
+    <!-- Owl Carousel -->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!-- Circle -->
+    <script src="/static/js/circle.js"></script>
+    <!-- main -->
+    <script src="/static/js/main.js"></script>
+      <!-- Fullpage Scroll -->
+    <script src="/static/js/fullpage.min.js"></script>    
+    <!-- Retina JavaScript -->
+    <script src="/static/js/retina.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="/static/js/custom.js"></script>  
+  </body>
+</html>

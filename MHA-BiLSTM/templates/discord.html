@@ -1,0 +1,231 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sarcasm Detection</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/static/images/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="/static/css/magnific-popup.css" />
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="/static/css/typography.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+  </head>
+  <body >
+    <!-- loading -->
+    <div id="loading">
+      <div id="loading-center">
+        <img src="/static/images/loader.gif" alt="loder">
+      </div>
+    </div>
+    <!-- loading End -->
+
+       <!-- Header-->
+        <header id="header-fullpage" class="home"">
+         <div class="container-fluid">
+            <div class="row align-items-center no-gutters">
+               <div class="col-lg-10">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <a class="navbar-brand" href="">
+                     <img class="logo" src="/static/images/logo.png" alt="image">
+                     </a>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav m-auto">
+                           <li class="nav-item">
+                              <a class="nav-link active" href="{{ url_for('index') }}">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="{{ url_for('Model') }}">Model</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="{{ url_for('modelresults') }}">Model Analysis</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="{{ url_for('discord') }}">Discord Bot</a>
+                           </li>
+                           
+                           
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <div class="col-lg-2 text-right sidemenu">
+                              <div id="nav-container">
+    <div class="bg"></div>
+    <div class="nav-button" >
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div id="nav-content" >
+        <h3 class="text-white mb-3">Get In Touch :</h3>
+         <ul><li>
+                                       
+                                        <p>P.E.S. Modern College of Engineering,Pune</p>
+                                    </li>
+                                     <li>
+                                       
+                                        <p><b>Mail:</b><a href="mailto:ashish.zope@moderncoe.edu.in">ashish.zope@moderncoe.edu.in</a></p>
+                                    </li>
+                                    <li>
+                                        
+                                        <p><b>Phone:</b><a href="tel:+9028001626"> +9028001626</a></p>
+                                    </li>
+                                   
+                                   </ul>
+
+    </div>
+  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+    <!-- Header-->
+    <!--=================================
+    MAIN CONTENT -->
+          <div class=" iq-breadcrumb purple-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="iq-mb-0">
+                            <h3 class="">MHA-BiLSTM</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <nav aria-label="breadcrumb" class="float-right">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{{ url_for('Model') }}">Home</a></li>
+                                
+                            </ol>
+                        </nav>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content" >
+         <!--=================================
+            Blog -->
+         <section class="iq-blog-detailbox pt-0">
+             <div class="container">
+               <div class="row">
+            <div class="blogdetailbox">
+              <div class="row"   >
+
+                  
+                     <div class="col-lg-4 col-md-12 col-sm-12 order-lg-2 order-2 wow fadeInUp"  data-wow-duration="1.0s">
+                        <div class="iq-post-sidebar iq-rmt-30 right-side-blog">
+                           <div class="iq-sidebar-widget search-box " data-wow-duration="1.0s">
+                              
+                           </div>
+                           <div class="iq-sidebar-widget  iq-category">
+                              <h5>Categories</h5>
+                              <ul class="iq-category list-inline mt-4">
+                                 <li class="mt-3"><a href="#">All</a></li>
+                                 <li class="mt-3"><a href="#">Technology</a></li>
+                                 <li class="mt-3"><a href="#">Ecommerce</a></li>
+                                 <li class="mt-3"><a href="#">Business</a></li>
+                                 <li class="mt-3"><a href="#">Marketing</a></li>
+                              </ul>
+                           </div>
+                           
+                           <div class="iq-sidebar-widget " >
+                              <h5>Tags</h5>
+                              <ul class="iq-tag list-inline mt-4">
+                                 <li class="mt-3"><a href="#">Technology</a></li>
+                                 <li class="mt-3"><a href="#">Ecomorce</a></li>
+                                 <li class="mt-3"><a href="#">Business</a></li>
+                                 <li class="mt-3"><a href="#">Marketing</a></li>
+                                 <li class="mt-3"><a href="#">Agency</a></li>
+                                 <li class="mt-3"><a href="#">Creative</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-8 col-md-12 col-sm-12 order-lg-1 order-2 wow fadeInUp "  data-wow-duration="1.0s">
+                        <div class="iq-blogbox">
+                           <div class="iq-blog-entry">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="iq-entry-image">
+                                       
+                                       <video class="img-fluid " controls>
+  <source src="/static/video/discord bot preview.mkv" type="video/mp4">
+  
+
+</video>
+                                    </div>
+                                    <div class="iq-blog-detail mt-5">
+                                       <div class="iq-entry-tag " >
+                                          <span>MHA-BiLSTM Application</span>
+                                       </div>
+                                       <div class="blog-box">
+                                          <ul>
+                                             <li>5 May 2021</li>
+                                             <li><b class="text-black font-weight-bold">By:</b> <a href="#">Sarc Detection</a></li>
+                                          </ul>
+                                          
+                                       </div>
+                                       <div class="iq-entry-title " >
+                                          <h5>Sarc Detection as Discord bot</h5>
+                                       </div>
+                                    </div>
+                                    <div class="iq-detail-box mt-4"> <p>
+                                        Discord bots are one of the most useful features of the communication platform. They are AIs that marketers and business owners can use to perform a wide range of automated tasks on the server.</p>
+                                       <hr>
+                                    </div>
+                                   
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--=================================
+            Blog -->
+      </div>
+   
+
+       
+
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first -->
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <!-- popper -->
+    <script src="/static/js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- Modernizr JavaScript -->
+    <script src="/static/js/modernizr.js"></script>
+    <!-- Owl Carousel -->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!-- Circle -->
+    <script src="/static/js/circle.js"></script>
+    <!-- main -->
+    <script src="/static/js/main.js"></script>
+      <!-- Fullpage Scroll -->
+    <script src="/static/js/fullpage.min.js"></script>    
+    <!-- Retina JavaScript -->
+    <script src="/static/js/retina.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="/static/js/custom.js"></script>  
+  </body>
+</html>
