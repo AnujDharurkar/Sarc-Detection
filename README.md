@@ -13,3 +13,7 @@ Using the best saved matrix in the system, the model will detect if there is sar
 
 #  Prerequisites
 Python 3.6, sklearn, pytorch, flask, discord api
+
+<img src="/Demo1.png">
+<img src="/Demo2.png">
+<img src="/Model%20analysis.png">
